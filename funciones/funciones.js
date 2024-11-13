@@ -36,6 +36,7 @@ function iniciarContador() {
         contador++;
     }, 1000);
 }
+// Función para index
 function saludoInicio() {
     alert("¡Bienvenido a la Sociedad Gastronómica y Cultural!");
 }
