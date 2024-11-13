@@ -52,3 +52,12 @@ function mostrarDetalle(anio) {
     };
     alert(detalles[anio]);
 }
+// Función para la Página 2
+function filtrarEventos() {
+    const filtro = document.getElementById("buscarEvento").value.toLowerCase();
+    const filas = document.querySelectorAll("tbody tr");
+    filas.forEach(fila => {
+        const nombreEvento = fila.cells[1].textContent.toLowerCase();
+        fila.style.display = nombreEvento.includes(filtro) ? "" : "none";
+    });
+}
