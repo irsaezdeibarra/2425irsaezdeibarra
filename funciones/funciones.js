@@ -36,3 +36,6 @@ function iniciarContador() {
         contador++;
     }, 1000);
 }
+function saludoInicio() {
+    alert("¡Bienvenido a la Sociedad Gastronómica y Cultural!");
+}
