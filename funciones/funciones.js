@@ -39,4 +39,16 @@ function iniciarContador() {
 // Función para index
 function saludoInicio() {
     alert("¡Bienvenido a la Sociedad Gastronómica y Cultural!");
+
+// Función para la Página 1    
+}
+function mostrarDetalle(anio) {
+    const detalles = {
+        2010: "Renovación de nuestras instalaciones.",
+        2015: "Incorporación de jóvenes con nuevas ideas.",
+        2018: "Eventos con chefs invitados.",
+        2021: "Compromiso con productos locales.",
+        2023: "Catas de vinos y sesiones de maridaje."
+    };
+    alert(detalles[anio]);
 }
