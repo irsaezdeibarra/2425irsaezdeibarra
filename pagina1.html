@@ -24,18 +24,24 @@
             <li><a href="pagina4.html">Contacto</a></li>
         </ul>
     </nav>
-    <script src="funciones/funciones.js"></script>
+    
     <!-- Encabezado principal de la página -->
     <header>
         <h1>Nuestra Historia</h1>
     </header>
-<ol>
-    <li><button onclick="mostrarDetalle(2010)">2010</button>: Renovación total.</li>
-    <li><button onclick="mostrarDetalle(2015)">2015</button>: Nuevas incorporaciones.</li>
-    <li><button onclick="mostrarDetalle(2018)">2018</button>: Chefs invitados.</li>
-    <li><button onclick="mostrarDetalle(2021)">2021</button>: Sostenibilidad.</li>
-    <li><button onclick="mostrarDetalle(2023)">2023</button>: Más actividades.</li>
-</ol>
+
+    <!-- Contenedor para mostrar detalles -->
+    <div id="detallesAnio" style="margin: 20px 0; font-weight: bold; color: #333;"></div>
+
+    <!-- Botones interactivos para mostrar detalles -->
+    <ol>
+        <li><button onclick="mostrarDetalle(2010)">2010</button>: Renovación total.</li>
+        <li><button onclick="mostrarDetalle(2015)">2015</button>: Nuevas incorporaciones.</li>
+        <li><button onclick="mostrarDetalle(2018)">2018</button>: Chefs invitados.</li>
+        <li><button onclick="mostrarDetalle(2021)">2021</button>: Sostenibilidad.</li>
+        <li><button onclick="mostrarDetalle(2023)">2023</button>: Más actividades.</li>
+    </ol>
+
     <!-- Contenido principal -->
     <main>
         <!-- Sección de historia reciente -->
@@ -58,5 +64,8 @@
     <footer>
         <p>&copy; 2024 Sociedad Gastronómica y Cultural.</p>
     </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="funciones/funciones.js"></script>
 </body>
-</html
+</html>
