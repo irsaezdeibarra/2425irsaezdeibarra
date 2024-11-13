@@ -20,24 +20,7 @@
         </ul>
     </nav>
     <!-- Fin de la barra de navegación -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 4</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
-</head>
-<body>
-    <h1>Página 4</h1>
-    <ul id="miLista">
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-    </ul>
-    <button onclick="agregarElemento()">Agregar elemento</button>
-    <script src="funciones/funciones.js"></script>
-</body>
-</html>
+
     <!-- Encabezado principal de la página -->
     <header>
         <h1>Recetas Destacadas</h1>
@@ -50,9 +33,7 @@
             <article>
                 <h2>Receta de Paella de Marisco</h2>
                 <img src="images/spanich-paella.jpg" alt="Paella de Marisco" width="300">
-                <!-- Descripción de la receta -->
                 <p>Uno de los chefs más mediáticos, Karlos Arguiñano, nos enseña su versión de la paella de marisco.</p>
-                <!-- Enlace externo a la receta completa -->
                 <a href="https://www.hogarmania.com/cocina/recetas/arroces-cereales/paella-marisco-36431.html" target="_blank">Leer más</a>
             </article>
 
@@ -60,11 +41,19 @@
             <article>
                 <h2>Receta de Cocido Madrileño</h2>
                 <img src="images/delicious-food-table-still-life.jpg" alt="Cocido Madrileño" width="300">
-                <!-- Descripción de la receta -->
                 <p>Aquí os mostramos el cocido madrileño, uno de nuestros platos favoritos. Esta receta de "Directo al Paladar" es excelente.</p>
-                <!-- Enlace externo a la receta completa -->
                 <a href="https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-cocido-madrileno" target="_blank">Leer más</a>
             </article>
+        </section>
+
+        <!-- Lista interactiva -->
+        <section>
+            <h2>Lista Interactiva</h2>
+            <ul id="miLista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ul>
+            <button onclick="agregarElemento()">Agregar elemento</button>
         </section>
     </main>
     <!-- Fin del contenido principal -->
@@ -73,5 +62,7 @@
     <footer>
         <p>&copy; 2024 Sociedad Gastronómica y Cultural.</p>
     </footer>
+
+    <script src="funciones/funciones.js"></script>
 </body>
 </html>
