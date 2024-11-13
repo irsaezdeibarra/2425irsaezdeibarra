@@ -61,8 +61,8 @@ function filtrarEventos() {
         fila.style.display = nombreEvento.includes(filtro) ? "" : "none";
     });
 }
-let favoritos = 0;
 // Función para la Página 3
+let favoritos = 0;
 function marcarFavorito() {
     favoritos++;
     document.getElementById("contadorFavoritos").textContent = `Favoritos: ${favoritos}`;
