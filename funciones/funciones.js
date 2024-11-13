@@ -67,3 +67,15 @@ function marcarFavorito() {
     favoritos++;
     document.getElementById("contadorFavoritos").textContent = `Favoritos: ${favoritos}`;
 }
+// Función para la Página 4
+function validarFormulario(evento) {
+    evento.preventDefault();
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    if (!nombre || !email) {
+        alert("Por favor, completa todos los campos.");
+        return;
+    }
+    alert("Formulario enviado correctamente. ¡Gracias por contactarnos!");
+    evento.target.submit();
+}
