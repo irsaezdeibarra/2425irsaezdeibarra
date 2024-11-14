@@ -1,10 +1,3 @@
-<form onsubmit="validarFormulario(event)">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" required>
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" required>
-    <button type="submit">Enviar</button>
-</form>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="estilos/estilos.css">
-    <!-- Enlace al archivo CSS externo para los estilos -->
 </head>
 <body>
-    <!-- Inicio de la barra de navegación -->
+    <!-- Barra de navegación -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -26,39 +18,45 @@
             <li><a href="pagina4.html">Contacto</a></li>
         </ul>
     </nav>
-    <!-- Fin de la barra de navegación -->
 
-    <!-- Encabezado de la página de contacto -->
+    <!-- Encabezado -->
     <header>
         <h1>Contacto</h1>
     </header>
 
-    <!-- Sección principal con el formulario de contacto -->
+    <!-- Formulario de contacto -->
     <main>
         <section>
-            <!-- Agrupar los elementos del formulario para mayor accesibilidad -->
             <fieldset>
                 <legend>Envíanos tu mensaje</legend>
-                <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
-                    <!-- Campo para el nombre del usuario -->
+                <form onsubmit="validarFormulario(event)">
+                    <!-- Campo Nombre -->
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br>
 
-                    <!-- Campo para el correo electrónico del usuario -->
+                    <!-- Campo Email -->
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required><br>
 
-                    <!-- Campo de texto para el mensaje -->
+                    <!-- Campo Mensaje -->
                     <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea><br>
 
-                    <!-- Botón de envío del formulario -->
-                    <input type="submit" value="Enviar">
+                    <!-- Botón de envío -->
+                    <button type="submit">Enviar</button>
                 </form>
             </fieldset>
         </section>
     </main>
-    <!-- Fin de la sección principal -->
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Sociedad Gastronómica y Cultural.</p>
+    </footer>
+
+    <script src="funciones/funciones.js"></script>
+</body>
+</html>
 
     <!-- Pie de página -->
     <footer>
