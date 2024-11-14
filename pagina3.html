@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos Culturales</title>
+    <title>Recetas Especiales</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-    <!-- Navegación principal -->
+    <!-- Barra de navegación -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -19,63 +19,49 @@
         </ul>
     </nav>
 
-    <!-- Encabezado -->
+    <!-- Encabezado principal -->
     <header>
-        <h2 style="text-align: center;">Eventos de la Sociedad Gastronómica</h2>
+        <h1>Recetas Destacadas</h1>
     </header>
 
-    <!-- Búsqueda de eventos -->
-    <div>
-        <label for="buscarEvento">Buscar evento:</label>
-        <input type="text" id="buscarEvento" onkeyup="filtrarEventos()" placeholder="Introduce el nombre del evento">
-    </div>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de artículos -->
+        <section>
+            <article>
+                <h2>Receta de Paella de Marisco</h2>
+                <img src="images/spanich-paella.jpg" alt="Paella de Marisco" width="300">
+                <p>Uno de los chefs más mediáticos, Karlos Arguiñano, nos enseña su versión de la paella de marisco.</p>
+                <a href="https://www.hogarmania.com/cocina/recetas/arroces-cereales/paella-marisco-36431.html" target="_blank">Leer más</a>
+                <button onclick="marcarFavorito()">Añadir a Favoritos</button>
+            </article>
 
-    <!-- Tabla de eventos -->
-    <table>
-        <thead>
-            <tr>
-                <th>Fecha</th>
-                <th>Evento</th>
-                <th>Ubicación</th>
-                <th>Descripción</th>
-                <th>Asistentes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>15/11/2024</td>
-                <td>Cata de Vinos</td>
-                <td>Bodega en Rioja Alavesa</td>
-                <td>Cata de vinos locales con expertos sommelier.</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>20/11/2024</td>
-                <td>Cena Temática Italiana</td>
-                <td>Centro Cívico Hegoalde</td>
-                <td>Una velada con platillos tradicionales italianos.</td>
-                <td>80</td>
-            </tr>
-            <tr>
-                <td>05/12/2024</td>
-                <td>Clase de Cocina Japonesa</td>
-                <td>Centro Cívico Hegoalde</td>
-                <td>Clase práctica de preparación de sushi y otros platos.</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>19/12/2024</td>
-                <td>Mercado Navideño</td>
-                <td>Calle Independencia</td>
-                <td>Puestos de comida, dulces y regalos artesanales.</td>
-                <td>Abierto a todos</td>
-            </tr>
-        </tbody>
-    </table>
+            <article>
+                <h2>Receta de Cocido Madrileño</h2>
+                <img src="images/delicious-food-table-still-life.jpg" alt="Cocido Madrileño" width="300">
+                <p>Aquí os mostramos el cocido madrileño, uno de nuestros platos favoritos. Esta receta de "Directo al Paladar" es excelente.</p>
+                <a href="https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-de-cocido-madrileno" target="_blank">Leer más</a>
+                <button onclick="marcarFavorito()">Añadir a Favoritos</button>
+            </article>
+        </section>
+
+        <!-- Sección interactiva -->
+        <section>
+            <h2>Lista Interactiva</h2>
+            <ul id="miLista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ul>
+            <button onclick="agregarElemento()">Agregar elemento</button>
+        </section>
+
+        <!-- Contador de favoritos -->
+        <div id="contadorFavoritos">Favoritos: 0</div>
+    </main>
 
     <!-- Pie de página -->
     <footer>
-        <p style="text-align: center;">© 2024 Sociedad Gastronómica. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Sociedad Gastronómica y Cultural.</p>
     </footer>
 
     <script src="funciones/funciones.js"></script>
