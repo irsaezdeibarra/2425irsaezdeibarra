@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos básicos de la página -->
-    <meta charset="UTF-8"> <!-- Codificación de caracteres para soportar caracteres especiales -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con Internet Explorer -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para vista responsive -->
-
-    <!-- Título de la página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos Culturales</title>
-
-    <!-- Enlace a la hoja de estilos externa -->
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
-   <div>
-    <label for="buscarEvento">Buscar evento:</label>
-    <input type="text" id="buscarEvento" onkeyup="filtrarEventos()" placeholder="Introduce el nombre del evento">
-</div> 
 <body>
     <!-- Navegación principal -->
     <nav>
         <ul>
-            <!-- Enlaces de navegación a otras páginas del sitio -->
             <li><a href="index.html">Inicio</a></li>
             <li><a href="pagina1.html">Historia</a></li>
             <li><a href="pagina2.html">Eventos</a></li>
@@ -28,20 +18,22 @@
             <li><a href="pagina4.html">Contacto</a></li>
         </ul>
     </nav>
-    <script src="funciones/funciones.js"></script>
-    <!-- Encabezado de la sección -->
+
+    <!-- Encabezado -->
     <header>
-        <h2 style="text-align: center;">Eventos de la Sociedad Gastronómica</h2> <!-- Título centrado -->
+        <h2 style="text-align: center;">Eventos de la Sociedad Gastronómica</h2>
     </header>
-<div>
-    <label for="buscarEvento">Buscar evento:</label>
-    <input type="text" id="buscarEvento" onkeyup="filtrarEventos()" placeholder="Introduce el nombre del evento">
-</div>
+
+    <!-- Búsqueda de eventos -->
+    <div>
+        <label for="buscarEvento">Buscar evento:</label>
+        <input type="text" id="buscarEvento" onkeyup="filtrarEventos()" placeholder="Introduce el nombre del evento">
+    </div>
+
     <!-- Tabla de eventos -->
     <table>
         <thead>
             <tr>
-                <!-- Encabezados de la tabla -->
                 <th>Fecha</th>
                 <th>Evento</th>
                 <th>Ubicación</th>
@@ -50,15 +42,13 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Fila de datos del evento 1 -->
             <tr>
                 <td>15/11/2024</td>
                 <td>Cata de Vinos</td>
-                <td>Bodega en rioja alavesa</td>
+                <td>Bodega en Rioja Alavesa</td>
                 <td>Cata de vinos locales con expertos sommelier.</td>
                 <td>50</td>
             </tr>
-            <!-- Fila de datos del evento 2 -->
             <tr>
                 <td>20/11/2024</td>
                 <td>Cena Temática Italiana</td>
@@ -66,7 +56,6 @@
                 <td>Una velada con platillos tradicionales italianos.</td>
                 <td>80</td>
             </tr>
-            <!-- Fila de datos del evento 3 -->
             <tr>
                 <td>05/12/2024</td>
                 <td>Clase de Cocina Japonesa</td>
@@ -74,7 +63,6 @@
                 <td>Clase práctica de preparación de sushi y otros platos.</td>
                 <td>30</td>
             </tr>
-            <!-- Fila de datos del evento 4 -->
             <tr>
                 <td>19/12/2024</td>
                 <td>Mercado Navideño</td>
@@ -84,5 +72,12 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- Pie de página -->
+    <footer>
+        <p style="text-align: center;">© 2024 Sociedad Gastronómica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="funciones/funciones.js"></script>
 </body>
 </html>
