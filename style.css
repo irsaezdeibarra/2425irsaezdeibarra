@@ -16,28 +16,32 @@ body {
 }
 
 .logo img {
-  height: 40px;
+  height: 50px;
 }
 
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 25px; /* Aumenta el espacio entre los enlaces */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 1rem;
-  padding: 5px 10px;
+  padding: 8px 12px; /* Aumenta el área clicable */
+}
+
+.nav-links a:hover {
+  color: #28a745;
 }
 
 .auth-buttons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .auth-buttons .btn {
-  padding: 8px 15px;
+  padding: 10px 15px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
@@ -58,15 +62,15 @@ body {
 .content {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem; /* Aumenta el espacio superior */
 }
 
 .left-section {
-  max-width: 50%;
+  max-width: 48%; /* Reduce ligeramente el ancho */
 }
 
 .left-section h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem; /* Ajusta el tamaño del texto */
   color: #f5f5f5;
   margin-bottom: 1rem;
 }
@@ -76,19 +80,19 @@ body {
 }
 
 .left-section p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
 .buttons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .btn-green {
   background-color: #28a745;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
@@ -99,20 +103,21 @@ body {
   background-color: transparent;
   border: 1px solid #f5f5f5;
   color: #f5f5f5;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 5px;
   font-size: 1rem;
 }
 
 /* Right Section */
 .right-section {
+  max-width: 48%;
   text-align: center;
 }
 
 .editor-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #ffc107;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .editor-image {
@@ -123,18 +128,23 @@ body {
 /* Footer */
 .footer {
   background-color: #333;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   text-align: center;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px; /* Aumenta el espacio entre enlaces */
 }
 
 .footer-links a {
   text-decoration: none;
   color: #ffc107;
-  font-size: 1rem;
+  font-size: 1.1rem; /* Aumenta el tamaño del texto */
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #28a745;
 }
