@@ -1,9 +1,11 @@
- {
+/* Reset CSS */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* styles.css */
+
+/* General Body Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,10 +13,12 @@ body {
   color: #fff;
   line-height: 1.6;
 }
+
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -25,39 +29,24 @@ p {
 .navbar {
   background-color: #000;
   padding: 10px 20px;
-}
-.navbar-container {
-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
 }
 
 .logo img {
   height: 40px;
 }
-.nav-links ul {
-  list-style: none;
+
+.nav-links {
   display: flex;
   gap: 20px;
 }
-.nav-links li {
-  font-size: 1rem;
-  cursor: pointer;
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f5f5f5;
-}
 
-.nav-links li span {
-  font-size: 0.8rem;
-nav a {
-  margin-left: 1rem;
+.nav-links a {
   text-decoration: none;
   color: #f5f5f5;
+  font-size: 1rem;
 }
 
 .auth-buttons .btn {
@@ -68,9 +57,8 @@ nav a {
   margin-left: 10px;
   cursor: pointer;
 }
+
 .auth-buttons .signup {
-nav .btn {
-  padding: 0.5rem 1rem;
   background-color: #28a745;
   border: none;
   color: white;
@@ -79,26 +67,32 @@ nav .btn {
 
 /* Main Section */
 .main-section {
-main {
-  padding: 2rem;
+  padding: 50px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
 }
 
-.text-content {
 .intro {
   max-width: 50%;
 }
 
-.text-content .highlight {
 .intro h1 {
   font-size: 2rem;
   color: #ffc107;
 }
+
 .intro span {
   color: #28a745;
+}
+
+.intro p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  margin-top: 1.5rem;
 }
 
 .cta-buttons .btn {
@@ -106,26 +100,22 @@ main {
   margin-right: 10px;
   font-size: 1rem;
   cursor: pointer;
-.intro p {
-  margin: 1rem 0;
-  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
 }
 
 .cta-buttons .cta-signup {
-.cta {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
   background-color: #28a745;
-  border: none;
   color: white;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .cta-buttons .cta-learn {
   background-color: #444;
   border: 1px solid #fff;
   color: #fff;
+}
+
+/* Editor Preview */
 .editor-preview {
   background-color: #282c34;
   border-radius: 8px;
@@ -133,8 +123,11 @@ main {
   width: 40%;
 }
 
-.image-content img {
+.editor-preview img {
   max-width: 100%;
+  border-radius: 8px;
+}
+
 .editor {
   background-color: #1e1e1e;
   border-radius: 8px;
@@ -142,17 +135,32 @@ main {
   color: #8fbcbb;
 }
 
+.file-tabs {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #333;
+  padding: 0.5rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.file-tabs span {
+  margin-right: 1rem;
+  color: #f5f5f5;
+}
+
+pre {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #a3be8c;
+  overflow-x: auto;
+}
+
 /* Footer */
 .footer {
   background-color: #000;
   padding: 15px 20px;
   text-align: center;
-.file-tabs {
-  display: flex;
-  justify-content: start;
-  background-color: #333;
-  padding: 0.5rem;
-  border-radius: 8px 8px 0 0;
 }
 
 .footer-links {
@@ -160,18 +168,11 @@ main {
   display: flex;
   justify-content: center;
   gap: 30px;
-.file-tabs span {
-  margin-right: 1rem;
-  color: #f5f5f5;
 }
 
-.footer-links li {
+.footer-links a {
+  text-decoration: none;
+  color: #ffc107;
   font-size: 0.9rem;
   cursor: pointer;
-pre {
-  background-color: #1e1e1e;
-  padding: 1rem;
-  border-radius: 8px;
-  color: #a3be8c;
-  overflow-x: auto;
 }
