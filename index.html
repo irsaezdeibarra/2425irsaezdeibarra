@@ -7,34 +7,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="logo">CodePen</div>
-    <nav>
-      <a href="#" class="nav-link">Log In</a>
-      <a href="#" class="nav-link sign-up">Sign Up</a>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/codepen-logo.png" alt="CodePen Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="#">Pens</a>
+      <a href="#">Projects</a>
+      <a href="#">Posts</a>
+      <a href="#">Collections</a>
+      <a href="#">Spark <span class="chevron">▼</span></a>
     </nav>
+    <div class="auth-buttons">
+      <button class="login-btn">Log In</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
   </header>
 
+  <!-- Main Content -->
   <main class="content">
-    <section class="description">
-      <h1>CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers. 👋</h1>
+    <section class="left-section">
+      <h1>
+        CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers.
+      </h1>
       <p>It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
       <div class="buttons">
         <button class="btn btn-green">Sign Up for Free</button>
         <button class="btn btn-white">Learn More</button>
       </div>
     </section>
-
-    <section class="editor">
+    <section class="right-section">
       <h2 class="editor-title">This is CodePen Projects!</h2>
-      <img src="code-editor-image.png" alt="Code Editor Preview" class="editor-image">
+      <img src="images/code-editor-image.png" alt="Code Editor Preview" class="editor-image">
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div>
-      CodePen for <a href="#">TEAMS</a> | <a href="#">EDUCATION</a> | <a href="#">PRIVACY</a> | <a href="#">WRITING</a>
-    </div>
+    <p>CodePen for <a href="#">TEAMS</a> | <a href="#">EDUCATION</a> | <a href="#">PRIVACY</a> | <a href="#">WRITING</a></p>
   </footer>
 </body>
 </html>
