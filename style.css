@@ -1,8 +1,24 @@
 /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* styles.css */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #1e1e1e;
+  color: #fff;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   color: #f5f5f5;
 }
 
@@ -10,141 +26,153 @@ body {
 .navbar {
   background-color: #000;
   padding: 10px 20px;
+}
+.navbar-container {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
 }
-
-.nav-links {
+.nav-links ul {
+  list-style: none;
   display: flex;
-  gap: 25px; /* Aumenta el espacio entre los enlaces */
+  gap: 20px;
+}
+.nav-links li {
+  font-size: 1rem;
+  cursor: pointer;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5f5f5;
 }
 
-.nav-links a {
+.nav-links li span {
+  font-size: 0.8rem;
+nav a {
+  margin-left: 1rem;
   text-decoration: none;
   color: #f5f5f5;
-  font-size: 1rem;
-  padding: 8px 12px; /* Aumenta el área clicable */
-}
-
-.nav-links a:hover {
-  color: #28a745;
-}
-
-.auth-buttons {
-  display: flex;
-  gap: 15px;
 }
 
 .auth-buttons .btn {
-  padding: 10px 15px;
-  border: none;
-  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 12px;
+  margin-left: 10px;
   cursor: pointer;
+}
+.auth-buttons .signup {
+nav .btn {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
   border-radius: 5px;
 }
 
-.auth-buttons .login {
-  background-color: transparent;
-  color: #f5f5f5;
-}
-
-.auth-buttons .signup {
-  background-color: #28a745;
-  color: white;
-}
-
-/* Main Content */
-.content {
+/* Main Section */
+.main-section {
+main {
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
-  padding: 4rem 2rem; /* Aumenta el espacio superior */
+  align-items: center;
+  padding: 50px 20px;
 }
 
-.left-section {
-  max-width: 48%; /* Reduce ligeramente el ancho */
+.text-content {
+.intro {
+  max-width: 50%;
 }
 
-.left-section h1 {
-  font-size: 2.8rem; /* Ajusta el tamaño del texto */
-  color: #f5f5f5;
-  margin-bottom: 1rem;
+.text-content .highlight {
+.intro h1 {
+  font-size: 2rem;
+  color: #ffc107;
 }
-
-.left-section .highlight {
+.intro span {
   color: #28a745;
 }
 
-.left-section p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-.buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.btn-green {
-  background-color: #28a745;
-  color: white;
-  padding: 12px 25px;
-  border: none;
+.cta-buttons .btn {
+  padding: 10px 20px;
+  margin-right: 10px;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 5px;
+.intro p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
 }
 
-.btn-gray {
-  background-color: transparent;
-  border: 1px solid #f5f5f5;
-  color: #f5f5f5;
-  padding: 12px 25px;
-  border-radius: 5px;
+.cta-buttons .cta-signup {
+.cta {
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Right Section */
-.right-section {
-  max-width: 48%;
-  text-align: center;
-}
-
-.editor-title {
-  font-size: 1.6rem;
-  color: #ffc107;
-  margin-bottom: 1.5rem;
-}
-
-.editor-image {
-  width: 100%;
+.cta-buttons .cta-learn {
+  background-color: #444;
+  border: 1px solid #fff;
+  color: #fff;
+.editor-preview {
+  background-color: #282c34;
   border-radius: 8px;
+  padding: 1rem;
+  width: 40%;
+}
+
+.image-content img {
+  max-width: 100%;
+.editor {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #8fbcbb;
 }
 
 /* Footer */
 .footer {
-  background-color: #333;
-  padding: 1.5rem 0;
+  background-color: #000;
+  padding: 15px 20px;
   text-align: center;
+.file-tabs {
+  display: flex;
+  justify-content: start;
+  background-color: #333;
+  padding: 0.5rem;
+  border-radius: 8px 8px 0 0;
 }
 
 .footer-links {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px; /* Aumenta el espacio entre enlaces */
+  gap: 30px;
+.file-tabs span {
+  margin-right: 1rem;
+  color: #f5f5f5;
 }
 
-.footer-links a {
-  text-decoration: none;
-  color: #ffc107;
-  font-size: 1.1rem; /* Aumenta el tamaño del texto */
-  font-weight: bold;
-}
-
-.footer-links a:hover {
-  color: #28a745;
+.footer-links li {
+  font-size: 0.9rem;
+  cursor: pointer;
+pre {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #a3be8c;
+  overflow-x: auto;
 }
