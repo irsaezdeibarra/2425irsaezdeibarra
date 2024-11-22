@@ -1,64 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <!-- Metadatos básicos de la página -->
-    <meta charset="UTF-8"> <!-- Codificación de caracteres para soportar caracteres especiales -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con Internet Explorer -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para vista responsive -->
-    
-    <!-- Título de la página -->
-    <title>Sociedad Gastronómica y Cultural</title>
-
-    <!-- Enlace a la hoja de estilos externa -->
-    <link rel="stylesheet" href="estilos/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen Clone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="saludoInicio()">
-    <!-- Navegación principal -->
-    <nav>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="path-to-logo.png" alt="CodePen Logo">
+      </div>
+      <nav class="nav-links">
         <ul>
-            <!-- Enlaces a las diferentes páginas de la web -->
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pagina1.html">Historia</a></li>
-            <li><a href="pagina2.html">Eventos</a></li>
-            <li><a href="pagina3.html">Recetas</a></li>
-            <li><a href="pagina4.html">Contacto</a></li>
+          <li>Pens</li>
+          <li>Projects</li>
+          <li>Posts</li>
+          <li>Collections</li>
+          <li>Spark <span>&#x25BC;</span></li>
         </ul>
-    </nav>
+      </nav>
+      <div class="auth-buttons">
+        <button class="btn login">Log In</button>
+        <button class="btn signup">Sign Up</button>
+      </div>
+    </div>
+  </header>
 
-    <!-- Encabezado principal de la página -->
-    <header>
-        <h1>Bienvenidos a la Sociedad Gastronómica y Cultural</h1>
-    </header>
+  <!-- Main Section -->
+  <main class="main-section">
+    <div class="text-content">
+      <h1>CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers. 👋</h1>
+      <p>It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
+      <div class="cta-buttons">
+        <button class="btn cta-signup">Sign Up for Free</button>
+        <button class="btn cta-learn">Learn More</button>
+      </div>
+    </div>
+    <div class="image-content">
+      <img src="path-to-screenshot.png" alt="CodePen Projects Screenshot">
+    </div>
+  </main>
 
-    <!-- Imagen de bienvenida -->
-    <img src="images/welcome-pub.jpg" alt="Imagen de bienvenida" width="500">
-
-    <!-- Contenido principal -->
-    <main>
-        <!-- Sección introductoria -->
-        <section>
-            <h2>Bienvenidas a Nuestra Sociedad Gastronómica</h2>
-            <p>Bienvenidas a nuestra sociedad gastronómica, un lugar donde compartimos la pasión por la cocina y la cultura culinaria. A continuación, algunos aspectos destacados de lo que ofrecemos:</p>
-
-            <!-- Lista de características y actividades -->
-            <ul>
-                <li>Eventos de degustación y cenas temáticas mensuales.</li>
-                <li>Clases de cocina impartidas por nuestros mejores chefs.</li>
-                <li>Cocina fusión de recetas tradicionales y modernas.</li>
-                <li>Exploración de productos locales y sostenibles.</li>
-                <li>Viajes culinarios para descubrir la gastronomía de diferentes regiones.</li>
-                <li>Charlas y talleres sobre maridaje de vinos y licores.</li>
-                <li>Comunidad activa y colaborativa de amantes de la gastronomía.</li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Pie de página con derechos reservados -->
-    <footer>
-        <p>&copy; 2024 Sociedad Gastronómica y Cultural. Todos los derechos reservados.</p>
-    </footer>
-
-    <!-- Enlace al archivo JavaScript -->
-    <script src="funciones/funciones.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li>CodePen for <strong>TEAMS</strong></li>
+      <li>CodePen for <strong>EDUCATION</strong></li>
+      <li>CodePen for <strong>PRIVACY</strong></li>
+      <li>CodePen for <strong>WRITING</strong></li>
+    </ul>
+  </footer>
 </body>
 </html>
