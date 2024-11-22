@@ -6,7 +6,7 @@ body {
   color: #f5f5f5;
 }
 
-header {
+header.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,90 +14,90 @@ header {
   background-color: #333;
 }
 
-.logo {
-  font-size: 1.5rem;
+header .logo {
+  font-size: 1.8rem;
   font-weight: bold;
   color: #f5f5f5;
 }
 
-nav a {
+header .nav-link {
   margin-left: 1rem;
   text-decoration: none;
   color: #f5f5f5;
 }
 
-nav .btn {
+header .sign-up {
   padding: 0.5rem 1rem;
   background-color: #28a745;
   color: white;
   border-radius: 5px;
 }
 
-main {
-  padding: 2rem;
+main.content {
   display: flex;
   justify-content: space-between;
+  padding: 2rem;
 }
 
-.intro {
+.description {
   max-width: 50%;
 }
 
-.intro h1 {
-  font-size: 2rem;
-  color: #ffc107;
+.description h1 {
+  font-size: 2.2rem;
 }
 
-.intro span {
+.description .highlight {
   color: #28a745;
 }
 
-.intro p {
-  margin: 1rem 0;
-  font-size: 1.1rem;
+.buttons {
+  margin-top: 1rem;
 }
 
-.cta {
-  padding: 0.75rem 1.5rem;
+.btn {
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
-  background-color: #28a745;
   border: none;
-  color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.editor-preview {
-  background-color: #282c34;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 40%;
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  color: #333;
+  margin-left: 1rem;
 }
 
 .editor {
-  background-color: #1e1e1e;
+  width: 45%;
+}
+
+.editor-title {
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.editor-image {
+  width: 100%;
   border-radius: 8px;
+}
+
+footer.footer {
+  text-align: center;
   padding: 1rem;
-  color: #8fbcbb;
-}
-
-.file-tabs {
-  display: flex;
-  justify-content: start;
   background-color: #333;
-  padding: 0.5rem;
-  border-radius: 8px 8px 0 0;
-}
-
-.file-tabs span {
-  margin-right: 1rem;
   color: #f5f5f5;
 }
 
-pre {
-  background-color: #1e1e1e;
-  padding: 1rem;
-  border-radius: 8px;
-  color: #a3be8c;
-  overflow-x: auto;
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+  margin: 0 0.5rem;
 }
