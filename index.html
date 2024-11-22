@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodePen Homepage</title>
+  <title>CodePen Clone</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -17,43 +18,60 @@
       <a href="#">Projects</a>
       <a href="#">Posts</a>
       <a href="#">Collections</a>
-      <a href="#">Spark ▼</a>
+      <a href="#">Spark <span class="chevron">▼</span></a>
     </nav>
     <div class="auth-buttons">
-      <button class="btn login">Log In</button>
-      <button class="btn signup">Sign Up</button>
+      <button class="login-btn">Log In</button>
+      <button class="signup-btn">Sign Up</button>
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="path-to-logo.png" alt="CodePen Logo">
+      </div>
+  <img src="https://assets.codepen.io/t-1/codepen-logo.svg" alt="CodePen Logo as SVG" />
+       </div>
+      <nav class="nav-links">
+        <ul>
+          <li>Pens</li>
+          <li>Projects</li>
+          <li>Posts</li>
+          <li>Collections</li>
+          <li>Spark <span>&#x25BC;</span></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button class="btn login">Log In</button>
+        <button class="btn signup">Sign Up</button>
+      </div>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="content">
-    <!-- Left Section -->
     <section class="left-section">
       <h1>
-        CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers. 👋
+        CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers.
       </h1>
+  <!-- Main Section -->
+  <main class="main-section">
+    <div class="text-content">
+      <h1>CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers. 👋</h1>
       <p>It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
       <div class="buttons">
         <button class="btn btn-green">Sign Up for Free</button>
-        <button class="btn btn-gray">Learn More</button>
+        <button class="btn btn-white">Learn More</button>
       </div>
     </section>
-
-    <!-- Right Section -->
     <section class="right-section">
       <h2 class="editor-title">This is CodePen Projects!</h2>
       <img src="images/code-editor-image.png" alt="Code Editor Preview" class="editor-image">
     </section>
   </main>
-
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-links">
-      <a href="#">CodePen for TEAMS</a>
-      <a href="#">CodePen for EDUCATION</a>
-      <a href="#">CodePen for PRIVACY</a>
-      <a href="#">CodePen for WRITING</a>
-    </div>
+    <p>CodePen for <a href="#">TEAMS</a> | <a href="#">EDUCATION</a> | <a href="#">PRIVACY</a> | <a href="#">WRITING</a></p>
   </footer>
 </body>
 </html>
+      <div class="cta-buttons">
+        <button class="btn cta-signup">Sign Up for Free</button>
+        <button class="btn cta-learn">Learn More</button>
