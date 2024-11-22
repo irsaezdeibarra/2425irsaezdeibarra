@@ -4,54 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodePen Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="navbar-container">
-      <div class="logo">
-  <img src="https://assets.codepen.io/t-1/codepen-logo.svg" alt="CodePen Logo as SVG" />
-       </div>
-      <nav class="nav-links">
-        <ul>
-          <li>Pens</li>
-          <li>Projects</li>
-          <li>Posts</li>
-          <li>Collections</li>
-          <li>Spark <span>&#x25BC;</span></li>
-        </ul>
-      </nav>
-      <div class="auth-buttons">
-        <button class="btn login">Log In</button>
-        <button class="btn signup">Sign Up</button>
-      </div>
-    </div>
+  <header>
+    <div class="logo">CodePen</div>
+    <nav>
+      <a href="#">Log In</a>
+      <a href="#" class="btn">Sign Up</a>
+    </nav>
   </header>
-
-  <!-- Main Section -->
-  <main class="main-section">
-    <div class="text-content">
-      <h1>CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers. 👋</h1>
+  <main>
+    <section class="intro">
+      <h1>CodePen is a <span>social development environment</span> for front-end designers and developers.</h1>
       <p>It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
-      <div class="cta-buttons">
-        <button class="btn cta-signup">Sign Up for Free</button>
-        <button class="btn cta-learn">Learn More</button>
+      <button class="cta">Sign Up for Free</button>
+    </section>
+    <section class="editor-preview">
+      <div class="editor">
+        <div class="file-tabs">
+          <span>index.html</span>
+          <span>style.css</span>
+          <span>script.js</span>
+        </div>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;Hello World!&lt;/header&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
       </div>
-    </div>
-    <div class="image-content">
-      <img src="path-to-screenshot.png" alt="CodePen Projects Screenshot">
-    </div>
+    </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <ul class="footer-links">
-      <li>CodePen for <strong>TEAMS</strong></li>
-      <li>CodePen for <strong>EDUCATION</strong></li>
-      <li>CodePen for <strong>PRIVACY</strong></li>
-      <li>CodePen for <strong>WRITING</strong></li>
-    </ul>
-  </footer>
 </body>
 </html>
