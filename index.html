@@ -7,40 +7,34 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="main-header">
     <div class="logo">CodePen</div>
     <nav>
-      <a href="#">Log In</a>
-      <a href="#" class="btn">Sign Up</a>
+      <a href="#" class="nav-link">Log In</a>
+      <a href="#" class="nav-link sign-up">Sign Up</a>
     </nav>
   </header>
-  <main>
-    <section class="intro">
-      <h1>CodePen is a <span>social development environment</span> for front-end designers and developers.</h1>
+
+  <main class="content">
+    <section class="description">
+      <h1>CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers. 👋</h1>
       <p>It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
-      <button class="cta">Sign Up for Free</button>
-    </section>
-    <section class="editor-preview">
-      <div class="editor">
-        <div class="file-tabs">
-          <span>index.html</span>
-          <span>style.css</span>
-          <span>script.js</span>
-        </div>
-        <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;title&gt;My Website&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;header&gt;Hello World!&lt;/header&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-        </pre>
+      <div class="buttons">
+        <button class="btn btn-green">Sign Up for Free</button>
+        <button class="btn btn-white">Learn More</button>
       </div>
     </section>
+
+    <section class="editor">
+      <h2 class="editor-title">This is CodePen Projects!</h2>
+      <img src="code-editor-image.png" alt="Code Editor Preview" class="editor-image">
+    </section>
   </main>
+
+  <footer class="footer">
+    <div>
+      CodePen for <a href="#">TEAMS</a> | <a href="#">EDUCATION</a> | <a href="#">PRIVACY</a> | <a href="#">WRITING</a>
+    </div>
+  </footer>
 </body>
 </html>
