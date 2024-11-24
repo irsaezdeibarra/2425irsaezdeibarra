@@ -123,40 +123,31 @@ body {
     color: #fff;
 }
 .right-content {
-    position: relative; /* Necesario para posicionar elementos dentro del contenedor */
-    display: inline-block; /* Ajusta el tamaño del contenedor al contenido */
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Asegura que el texto también esté centrado */
+    gap: 10px; /* Espacio entre la frase y la imagen */
+    margin: 20px 0; /* Espaciado adicional opcional */
 }
 
 .overlay-text {
-    position: absolute; /* Permite posicionar el texto sobre la imagen */
-    top: -20px; /* Ajusta la posición para colocar el texto arriba de la imagen */
-    left: 50%; /* Centra horizontalmente el texto */
-    transform: translateX(-50%); /* Ajusta el texto para que esté perfectamente centrado */
     color: #fff; /* Color blanco para el texto */
-    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
     font-weight: bold; /* Hace el texto más visible */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente para mayor contraste */
-    padding: 5px 10px; /* Espaciado interno para el texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    padding: 10px 15px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
+    max-width: 90%; /* Opcional: limita el ancho del texto */
 }
 
 .right-content img {
     display: block; /* Asegura que la imagen no tenga espacio adicional alrededor */
     max-width: 100%; /* Escala la imagen al tamaño del contenedor */
     height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
 }
 
-.landing .right-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.landing .right-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
 
 /* Footer */
 .footer {
