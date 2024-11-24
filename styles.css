@@ -77,7 +77,11 @@ body {
     align-items: center;
     padding: 40px;
 }
-
+.left-content {
+    width: 55%; /* El contenedor ocupa el 55% del ancho de la página */
+    text-align: left;
+    padding: 20px;
+}
 .landing .left-content {
     flex: 1;
     max-width: 50%;
