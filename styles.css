@@ -27,10 +27,8 @@ body {
     gap: 15px; /* Espacio entre los elementos del menú */
     flex: 1; /* Permite que el menú ocupe espacio adicional para centrarlo */
 }
-.menu .explore {
 .title {
-    color: #FFD700; /* Amarillo dorado */
-}
+    color: #FFFF00; /* Amarillo en hexadecimal */
 }
 .menu .title {
     font-weight: bold;
