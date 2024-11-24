@@ -40,13 +40,11 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Siempre blanco */
     font-size: 1rem;
 }
 
-.menu a:hover {
-    color: #ffeb3b;
-}
+/* Se eliminó la regla :hover */
 
 /* Botones de acciones */
 .actions {
@@ -169,4 +167,3 @@ body {
 .footer-item strong {
     color: #fff;
 }
-
