@@ -1,178 +1,139 @@
-/* General Styles */
+/* Reinicio general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* styles.css */
+
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #1e1e1e;
-  color: #fff;
   line-height: 1.6;
-}
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  color: #f5f5f5;
+  background-color: #222;
+  color: #fff;
 }
 
-/* Navbar */
+/* Barra de navegación */
 .navbar {
-  background-color: #000;
-  padding: 10px 20px;
-}
-.navbar-container {
-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 20px;
   background-color: #333;
 }
 
-.logo img {
+.navbar .logo img {
   height: 40px;
 }
-.nav-links ul {
-  list-style: none;
+
+.navbar .nav-links {
   display: flex;
   gap: 20px;
-}
-.nav-links li {
-  font-size: 1rem;
-  cursor: pointer;
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f5f5f5;
+  list-style: none;
 }
 
-.nav-links li span {
-  font-size: 0.8rem;
-nav a {
-  margin-left: 1rem;
+.navbar .nav-links li a {
   text-decoration: none;
-  color: #f5f5f5;
-}
-
-.auth-buttons .btn {
-  background-color: transparent;
-  border: 1px solid #fff;
   color: #fff;
-  padding: 8px 12px;
-  margin-left: 10px;
-  cursor: pointer;
+  font-size: 16px;
 }
-.auth-buttons .signup {
-nav .btn {
-  padding: 0.5rem 1rem;
-  background-color: #28a745;
+
+.navbar .auth-buttons .login,
+.navbar .auth-buttons .signup {
+  padding: 10px 20px;
   border: none;
-  color: white;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-/* Main Section */
-.main-section {
-main {
-  padding: 2rem;
+.navbar .auth-buttons .login {
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar .auth-buttons .signup {
+  background-color: #0077ff;
+  color: #fff;
+}
+
+/* Sección principal */
+.landing {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
+  padding: 40px;
 }
 
-.text-content {
-.intro {
+.landing .left-content {
+  flex: 1;
   max-width: 50%;
 }
 
-.text-content .highlight {
-.intro h1 {
-  font-size: 2rem;
-  color: #ffc107;
-}
-.intro span {
-  color: #28a745;
+.landing .left-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.3;
 }
 
-.cta-buttons .btn {
-  padding: 10px 20px;
-  margin-right: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-.intro p {
-  margin: 1rem 0;
-  font-size: 1.1rem;
+.landing .left-content h1 span {
+  color: #50fa7b;
 }
 
-.cta-buttons .cta-signup {
-.cta {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background-color: #28a745;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+.landing .left-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.cta-buttons .cta-learn {
-  background-color: #444;
-  border: 1px solid #fff;
-  color: #fff;
-.editor-preview {
-  background-color: #282c34;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 40%;
-}
-
-.image-content img {
-  max-width: 100%;
-.editor {
-  background-color: #1e1e1e;
-  border-radius: 8px;
-  padding: 1rem;
-  color: #8fbcbb;
-}
-
-/* Footer */
-.footer {
-  background-color: #000;
-  padding: 15px 20px;
-  text-align: center;
-.file-tabs {
+.landing .cta-buttons {
   display: flex;
-  justify-content: start;
-  background-color: #333;
-  padding: 0.5rem;
-  border-radius: 8px 8px 0 0;
+  gap: 20px;
 }
 
-.footer-links {
-  list-style: none;
+.landing .cta-buttons .signup-button,
+.landing .cta-buttons .learn-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.landing .cta-buttons .signup-button {
+  background-color: #50fa7b;
+  color: #000;
+}
+
+.landing .cta-buttons .learn-button {
+  background-color: #444;
+  color: #fff;
+}
+
+.landing .right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.landing .right-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .footer-links {
   display: flex;
   justify-content: center;
   gap: 30px;
-.file-tabs span {
-  margin-right: 1rem;
-  color: #f5f5f5;
+  font-size: 14px;
 }
 
-.footer-links li {
-  font-size: 0.9rem;
-  cursor: pointer;
-pre {
-  background-color: #1e1e1e;
-  padding: 1rem;
-  border-radius: 8px;
-  color: #a3be8c;
-  overflow-x: auto;
+.footer .footer-links a {
+  text-decoration: none;
+  color: #aaa;
 }
