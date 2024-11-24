@@ -119,21 +119,40 @@ body {
   border-radius: 10px;
 }
 
-/* Pie de página */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del footer */
 .footer {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
+    display: flex; /* Para alinear los elementos en fila */
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    position: fixed; /* Fija la posición al fondo de la página */
+    bottom: 0; /* Ubica el contenedor en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    background-color: #2b2b2b; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 10px 0; /* Espaciado interno */
+    border-top: 2px solid #444; /* Borde superior */
 }
 
-.footer .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  font-size: 14px;
+/* Estilo de los elementos del footer */
+.footer-item {
+    flex: 1; /* Hace que cada elemento ocupe el mismo espacio */
+    text-align: center; /* Centra el texto dentro de cada sección */
+    padding: 5px;
+    border-left: 1px solid #444; /* Separación entre elementos */
 }
 
-.footer .footer-links a {
-  text-decoration: none;
-  color: #aaa;
+/* Quitar el borde izquierdo del primer elemento */
+.footer-item:first-child {
+    border-left: none;
+}
+
+.footer-item strong {
+    color: #fff; /* El texto en negrita será blanco */
 }
