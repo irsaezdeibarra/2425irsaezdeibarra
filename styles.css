@@ -125,16 +125,28 @@ body {
     color: #fff;
 }
 
-.landing .right-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.image-container {
+    position: relative;
+    display: inline-block;
 }
 
-.landing .right-content img {
+.image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Ajusta según tu preferencia */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px; /* Ajusta según tu preferencia */
+    text-align: center;
 }
 
 /* Footer */
