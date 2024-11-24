@@ -122,6 +122,29 @@ body {
     background-color: #444;
     color: #fff;
 }
+.right-content {
+    position: relative; /* Necesario para posicionar elementos dentro del contenedor */
+    display: inline-block; /* Ajusta el tamaño del contenedor al contenido */
+}
+
+.overlay-text {
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: -20px; /* Ajusta la posición para colocar el texto arriba de la imagen */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translateX(-50%); /* Ajusta el texto para que esté perfectamente centrado */
+    color: #fff; /* Color blanco para el texto */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más visible */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente para mayor contraste */
+    padding: 5px 10px; /* Espaciado interno para el texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.right-content img {
+    display: block; /* Asegura que la imagen no tenga espacio adicional alrededor */
+    max-width: 100%; /* Escala la imagen al tamaño del contenedor */
+    height: auto;
+}
 
 .landing .right-content {
     flex: 1;
