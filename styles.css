@@ -27,10 +27,10 @@ body {
     gap: 15px; /* Espacio entre los elementos del menú */
     flex: 1; /* Permite que el menú ocupe espacio adicional para centrarlo */
 }
+.menu .explore {
 .title {
     color: #FFD700; /* Amarillo dorado */
 }
-
 }
 .menu .title {
     font-weight: bold;
@@ -121,49 +121,19 @@ body {
 .landing .cta-buttons .learn-button {
     background-color: #444;
     color: #fff;
-/* Contenedor principal */
-        .container {
-            display: flex; /* Usamos Flexbox */
-            justify-content: flex-end; /* Alinea todo hacia la derecha */
-            align-items: flex-start; /* Alinea los elementos en la parte superior */
-            padding: 20px;
-            background-color: #2b2b2b; /* Fondo gris oscuro */
-            height: 100vh; /* Ocupa toda la altura de la ventana */
-            box-sizing: border-box;
-        }
+}
 
-        /* Sección derecha */
-        .right-content {
-            flex: 0 0 40%; /* Ocupa el 40% del ancho total */
-            display: flex; /* Flexbox interno */
-            flex-direction: column; /* Apila los elementos verticalmente */
-            align-items: center; /* Centra los elementos horizontalmente */
-            text-align: center; /* Centra el texto dentro */
-            gap: 10px; /* Espacio entre el texto y la imagen */
-            box-sizing: border-box; /* Incluye padding y border en el ancho total */
-            background-color: #444; /* Fondo gris para diferenciar */
-            padding: 20px;
-            border-radius: 10px; /* Bordes redondeados */
-        }
+.landing .right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
-        /* Texto superpuesto */
-        .overlay-text {
-            color: #fff; /* Texto en blanco */
-            font-size: 1.5rem; /* Tamaño del texto */
-            font-weight: bold; /* Texto en negrita */
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
-            padding: 10px 15px; /* Espaciado interno */
-            border-radius: 5px; /* Bordes redondeados */
-            max-width: 90%; /* Limita el ancho del texto */
-        }
-
-        /* Imagen */
-        .right-content img {
-            display: block; /* Elimina espacio extra alrededor */
-            max-width: 100%; /* Escala la imagen al ancho disponible */
-            height: auto; /* Mantiene la proporción de la imagen */
-            border-radius: 10px; /* Bordes redondeados */
-        }
+.landing .right-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 /* Footer */
 .footer {
