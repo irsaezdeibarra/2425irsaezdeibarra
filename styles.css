@@ -121,33 +121,49 @@ body {
 .landing .cta-buttons .learn-button {
     background-color: #444;
     color: #fff;
-}
-.right-content {
-    display: flex; /* Usamos flexbox */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Asegura que el texto también esté centrado */
-    gap: 10px; /* Espacio entre la frase y la imagen */
-    margin: 20px 0; /* Espaciado adicional opcional */
-}
+/* Contenedor principal */
+        .container {
+            display: flex; /* Usamos Flexbox */
+            justify-content: flex-end; /* Alinea todo hacia la derecha */
+            align-items: flex-start; /* Alinea los elementos en la parte superior */
+            padding: 20px;
+            background-color: #2b2b2b; /* Fondo gris oscuro */
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            box-sizing: border-box;
+        }
 
-.overlay-text {
-    color: #fff; /* Color blanco para el texto */
-    font-size: 1.5rem; /* Ajusta el tamaño del texto */
-    font-weight: bold; /* Hace el texto más visible */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
-    padding: 10px 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    max-width: 90%; /* Opcional: limita el ancho del texto */
-}
+        /* Sección derecha */
+        .right-content {
+            flex: 0 0 40%; /* Ocupa el 40% del ancho total */
+            display: flex; /* Flexbox interno */
+            flex-direction: column; /* Apila los elementos verticalmente */
+            align-items: center; /* Centra los elementos horizontalmente */
+            text-align: center; /* Centra el texto dentro */
+            gap: 10px; /* Espacio entre el texto y la imagen */
+            box-sizing: border-box; /* Incluye padding y border en el ancho total */
+            background-color: #444; /* Fondo gris para diferenciar */
+            padding: 20px;
+            border-radius: 10px; /* Bordes redondeados */
+        }
 
-.right-content img {
-    display: block; /* Asegura que la imagen no tenga espacio adicional alrededor */
-    max-width: 100%; /* Escala la imagen al tamaño del contenedor */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-}
+        /* Texto superpuesto */
+        .overlay-text {
+            color: #fff; /* Texto en blanco */
+            font-size: 1.5rem; /* Tamaño del texto */
+            font-weight: bold; /* Texto en negrita */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+            padding: 10px 15px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            max-width: 90%; /* Limita el ancho del texto */
+        }
 
+        /* Imagen */
+        .right-content img {
+            display: block; /* Elimina espacio extra alrededor */
+            max-width: 100%; /* Escala la imagen al ancho disponible */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+        }
 
 /* Footer */
 .footer {
