@@ -77,6 +77,14 @@ body {
     align-items: center;
     padding: 40px;
 }
+
+ {
+  .landing {  
+    background: linear-gradient(135deg, #333, #555, #777, #999); /* Tonos de gris */
+    min-height: 100vh; /* Asegura que cubra toda la pantalla */
+    margin: 0;
+}
+
 .left-content {
     width: 55%; /* El contenedor ocupa el 55% del ancho de la página */
     text-align: left;
@@ -129,7 +137,6 @@ body {
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
-    background-color: #181a1f;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
