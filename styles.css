@@ -35,35 +35,7 @@ body {
     color: #FFD700; /* Amarillo dorado */
     margin-right: 15px;
 }
-  font-family: 'Arial', sans-serif;
-      background-color: #2c2f36; /* Oscuro */
-      color: white;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      max-width: 600px;
-      text-align: left;
-      line-height: 1.6;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #f5f5f5;
-    }
-
-    .emoji {
-      font-size: 1.2rem;
-    }
-
-    p {
-      color: #d1d5db; /* Gris claro */
-    }
+  
 .menu a {
     text-decoration: none;
     color: #fff; /* Color blanco */
@@ -111,66 +83,63 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.left-content {
-    max-width: 50%; /* Limita el ancho */
-    text-align: left;
-    padding: 5px;
-}
-
 .left-content h1 {
-    font-size: 2rem; /* Tamaño del texto principal */
-    margin-bottom: 1rem;
-    line-height: 1.4;
-    font-weight: 400; /* Peso del texto normal */
+    font-size: 2.4rem; /* Ajuste del tamaño del texto */
+    margin-bottom: 1.5rem; /* Más espacio debajo del encabezado */
+    line-height: 1.5; /* Mejor legibilidad */
+    font-weight: 400;
 }
 
 .left-content h1 .highlighted {
-    font-weight: bold; /* Resalta algunas palabras */
-    color: #fff; /* Blanco puro para destacar */
+    font-weight: bold;
+    color: #FFD700; /* Color amarillo similar al dorado */
+}
+
+.left-content h1 .emoji {
+    font-size: 1.8rem; /* Tamaño ajustado para el emoji */
+    vertical-align: middle; /* Centrar el emoji con el texto */
 }
 
 .left-content p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem; /* Ajustar el tamaño del texto */
+    margin-bottom: 2rem; /* Espaciado inferior */
     line-height: 1.6;
-    color: #d0d0d0; /* Texto ligeramente gris */
+    color: #e0e0e0; /* Gris más claro */
 }
 
 .left-content p strong {
-    color: #fff; /* Blanco puro */
-    font-weight: bold; /* Texto más grueso */
+    color: #ffffff; /* Blanco para destacar */
+    font-weight: bold;
 }
 
+/* Estilo de los botones */
 .cta-buttons {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* Permite que los botones se adapten al espacio */
+    gap: 15px; /* Reducir el espacio entre botones */
 }
 
 .cta-buttons button {
-    flex: 2 1 auto; /* Ocupan espacio proporcional al contenedor */
-    max-width: 320px; /* Ajusta el ancho máximo de los botones */
-    padding: 15px 30px; /* Tamaño ajustado */
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem; /* Fuente ajustada */
+    font-size:2 1rem; /* Tamaño de fuente ajustado */
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    text-align: center;
-    box-sizing: border-box; /* Asegura que padding no afecte el tamaño */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .signup-button {
-    background-color: #50fa7b;
-    color: #000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #28a745; /* Verde brillante */
+    color: #fff;
 }
 
+
 .learn-button {
-    background-color: #000;
+    background-color: #000; /* Gris oscuro */
     color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+
 /* Contenedor principal */
 .right-content {
     display: flex;
