@@ -133,19 +133,19 @@ background-color: #202020;
 color: #ffffff;
 }
 
-.codepen-section {
+.overlay-text {
 text-align: center;
 padding: 20px;
 background-color: #282c34;
 }
 
-.codepen-title {
+.overlay-text {
 font-size: 24px;
 color: #ffcd3c;
 margin-bottom: 15px;
 }
 
-.codepen-container {
+.right-content {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -158,14 +158,14 @@ margin: 0 auto;
 position: relative;
 }
 
-.codepen-image {
+.imagenes/Coding imagen.png {
 max-width: 100%;
 height: auto;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-.resized-image {
+.imagenes/Coding imagen.png {
 position: absolute;
 bottom: 0;
 right: 0;
