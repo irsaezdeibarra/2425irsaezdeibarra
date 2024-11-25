@@ -83,69 +83,62 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Ajustar el estilo del h1 */
 .left-content h1 {
-    font-size: 2.4rem; /* Ajuste del tamaño del texto */
-    margin-bottom: 1.5rem; /* Más espacio debajo del encabezado */
-    line-height: 1.5; /* Mejor legibilidad */
-    font-weight: 400;
-}
-
-.left-content h1 {
-    font-size: 3rem; /* Tamaño más grande del encabezado */
+    font-size: 3rem; /* Tamaño más grande */
     margin-bottom: 1.5rem; /* Espaciado inferior */
-    line-height: 1.6; /* Más espacio entre líneas */
-    font-weight: 400; /* Peso normal */
-    max-width: 80%; /* Limita el ancho del texto */
-    word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+    line-height: 1.6; /* Espacio entre líneas */
+    font-weight: 300; /* Texto más fino */
+    color: #ffffff; /* Blanco puro */
+    max-high: 90%; /* Permitir que ocupe más espacio horizontal */
+    word-wrap: break-word; /* Asegurar que se ajuste bien al espacio */
 }
 
 .left-content h1 .highlighted {
-    font-weight: 700; /* Hace que el texto sea más grueso */
-    color: #FFD700; /* Amarillo dorado */
+    font-weight: 700; /* Texto más grueso */
+    color: #ffffff; /* Mantener blanco puro */
 }
 
+/* Párrafo */
 .left-content p {
-    font-size: 1.2rem; /* Ajustar el tamaño del texto */
+    font-size: 1.2rem; /* Tamaño de fuente ligeramente mayor */
     margin-bottom: 2rem; /* Espaciado inferior */
-    line-height: 1.6;
-    color: #e0e0e0; /* Gris más claro */
+    line-height: 1.8; /* Más espacio entre líneas */
+    color: #e0e0e0; /* Blanco suave */
+    max-high: 90%; /* Ancho máximo para alinearse al diseño */
+    word-wrap: break-word;
 }
 
-.left-content p strong {
-    color: #ffffff; /* Blanco para destacar */
-    font-weight: bold;
-}
-
-/* Estilo de los botones */
-cta-buttons {
+/* Botones */
+.cta-buttons {
     display: flex;
-    gap: 20px; /* Espaciado entre los botones */
-    flex-wrap: wrap; /* Permite que los botones se ajusten en líneas si no hay suficiente espacio */
+    gap: 20px; /* Espaciado entre botones */
+    flex-wrap: wrap; /* Ajuste dinámico */
+    justify-content: flex-start; /* Alinear a la izquierda como en la referencia */
 }
 
 .cta-buttons button {
-    font-size: 1.4rem; /* Tamaño más grande del texto */
+    font-size: 1.6rem; /* Fuente más grande */
     font-weight: bold;
-    padding: 15px 40px; /* Más espacio interno */
-    border-radius: 8px; /* Bordes más redondeados */
+    padding: 15px 50px; /* Tamaño grande */
+    border-radius: 8px; /* Bordes redondeados */
     cursor: pointer;
-    border: none;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
-    flex-grow: 1; /* Permite que los botones ocupen el mismo ancho */
-    text-align: center; /* Alinea el texto de los botones */
-    max-width: 320px; /* Limita el ancho máximo */
+    border: none; /* Sin bordes */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    flex-grow: 0; /* Ajuste de tamaño estático */
+    max-width: 300px; /* Limitar ancho máximo */
+    text-align: center;
 }
 
 .signup-button {
     background-color: #28a745; /* Verde brillante */
-    color: #fff;
+    color: #ffffff; /* Blanco */
 }
 
 .learn-button {
     background-color: #000; /* negro */
-    color: #fff;
+    color: #ffffff; /* Blanco */
 }
-
 /* Contenedor principal */
 .right-content {
     display: flex;
