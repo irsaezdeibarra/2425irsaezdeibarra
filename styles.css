@@ -90,14 +90,18 @@ body {
     font-weight: 400;
 }
 
-.left-content h1 .highlighted {
-    font-weight: bold;
-    color: #FFD700; /* Color amarillo similar al dorado */
+.left-content h1 {
+    font-size: 3rem; /* Tamaño más grande del encabezado */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+    line-height: 1.6; /* Más espacio entre líneas */
+    font-weight: 400; /* Peso normal */
+    max-width: 80%; /* Limita el ancho del texto */
+    word-wrap: break-word; /* Permite que las palabras largas se ajusten */
 }
 
-.left-content h1 .emoji {
-    font-size: 1.8rem; /* Tamaño ajustado para el emoji */
-    vertical-align: middle; /* Centrar el emoji con el texto */
+.left-content h1 .highlighted {
+    font-weight: 700; /* Hace que el texto sea más grueso */
+    color: #FFD700; /* Amarillo dorado */
 }
 
 .left-content p {
@@ -113,19 +117,23 @@ body {
 }
 
 /* Estilo de los botones */
-.cta-buttons {
+cta-buttons {
     display: flex;
-    gap: 15px; /* Reducir el espacio entre botones */
+    gap: 20px; /* Espaciado entre los botones */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en líneas si no hay suficiente espacio */
 }
 
 .cta-buttons button {
-    font-size:2 1rem; /* Tamaño de fuente ajustado */
+    font-size: 1.4rem; /* Tamaño más grande del texto */
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 15px 40px; /* Más espacio interno */
+    border-radius: 8px; /* Bordes más redondeados */
     cursor: pointer;
     border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    flex-grow: 1; /* Permite que los botones ocupen el mismo ancho */
+    text-align: center; /* Alinea el texto de los botones */
+    max-width: 320px; /* Limita el ancho máximo */
 }
 
 .signup-button {
@@ -133,12 +141,10 @@ body {
     color: #fff;
 }
 
-
 .learn-button {
-    background-color: #000; /* Gris oscuro */
+    background-color: #000; /* negro */
     color: #fff;
 }
-
 
 /* Contenedor principal */
 .right-content {
