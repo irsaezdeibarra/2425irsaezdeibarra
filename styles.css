@@ -116,15 +116,20 @@ body {
 .cta-buttons {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Permite que los botones se adapten al espacio */
 }
 
 .cta-buttons button {
-    padding: 12px 25px;
+    flex: 1 1 auto; /* Ocupan espacio proporcional al contenedor */
+    max-width: 220px; /* Ajusta el ancho máximo de los botones */
+    padding: 15px 30px; /* Tamaño ajustado */
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1rem; /* Fuente ajustada */
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
+    box-sizing: border-box; /* Asegura que padding no afecte el tamaño */
 }
 
 .signup-button {
@@ -134,11 +139,10 @@ body {
 }
 
 .learn-button {
-    background-color: #444;
+    background-color: #000;
     color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 /* Contenedor principal */
 .right-content {
     display: flex;
