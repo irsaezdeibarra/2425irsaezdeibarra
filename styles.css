@@ -76,8 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
-    background-color: #1e1e1e; /* Fondo oscuro */
+    padding: 20px;
     color: #fff;
     height: 100vh; /* Ajusta la altura completa de la ventana */
     background: linear-gradient(145deg, #444 0%, #222 80%);
@@ -140,19 +139,14 @@ body {
     display: flex;
     flex-direction: column; /* Apila texto e imagen verticalmente */
     align-items: center; /* Centra todo horizontalmente */
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px; /* Bordes redondeados */
     max-width: 40%; /* Limita el ancho del contenedor */
     margin: 20px auto; /* Centra el contenedor en la página */
     text-align: center; /* Centra el texto */
 }
 
-/* Estilos del texto encima de la imagen */
-.overlay-text h2 {
-    font-size: 24px; /* Tamaño del texto */
-    color: #ffcd3c; /* Color amarillo dorado */
-    margin-bottom: 15px; /* Separación entre texto e imagen */
-}
+
 .overlay-text h2 {
     font-size: 24px; /* Tamaño del texto */
     color: #ffffff; /* Color blanco para el texto principal */
