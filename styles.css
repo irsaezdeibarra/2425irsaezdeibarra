@@ -77,12 +77,6 @@ body {
     align-items: center;
     padding: 40px;
 }
- {
-  .landing {  
-    background: linear-gradient(135deg, #333, #555, #777, #999); /* Tonos de gris */
-    min-height: 100vh; /* Asegura que cubra toda la pantalla */
-    margin: 0;
-}
 .left-content {
     width: 55%; /* El contenedor ocupa el 55% del ancho de la página */
     text-align: left;
@@ -131,25 +125,56 @@ body {
     color: #fff;
 }
 
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #202020;
+color: #ffffff;
+}
+
+.overlay-text {
+text-align: center;
+padding: 20px;
+background-color: #282c34;
+}
+
+.overlay-text {
+font-size: 24px;
+color: #ffcd3c;
+margin-bottom: 15px;
+}
+
 .right-content {
-    display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    background-color: #181a1f; /* Fondo oscuro del contenedor */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
-    max-width: 40%; /* Ajusta el ancho del contenedor */
-    height: auto; /* Ajusta el alto del contenedor automáticamente */
-    margin: 0 auto; /* Centra el contenedor en la página */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #181a1f;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+max-width: 80%;
+margin: 0 auto;
+position: relative;
 }
 
 .imagenes/Coding imagen.png {
-    max-width: 90%; /* La imagen ocupará hasta el 90% del ancho del contenedor */
-    height: auto; /* Mantiene las proporciones originales de la imagen */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra para profundidad */
+max-width: 100%;
+max-width: 40%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
+
+.imagenes/Coding imagen.png {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 40%; /* Resize to 40% of the container's width */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
 /* Footer */
 .footer {
     display: flex;
