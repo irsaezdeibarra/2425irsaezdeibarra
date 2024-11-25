@@ -27,7 +27,9 @@ body {
     gap: 15px; /* Espacio entre los elementos del menú */
     flex: 1; /* Permite que el menú ocupe espacio adicional para centrarlo */
 }
-
+.explore-section .title {
+    color: #FFD700; /* Amarillo dorado */
+    font-weight: bold; /* Texto en negrita */
 .menu a {
     text-decoration: none;
     color: #fff; /* Color blanco */
@@ -122,7 +124,7 @@ body {
 }
 
 .learn-button {
-    background-color: #444; /* Gris oscuro */
+    background-color: #000; /* Negro */
     color: #ffffff; /* Blanco puro */
 }
 
