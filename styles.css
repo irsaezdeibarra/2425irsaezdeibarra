@@ -144,7 +144,7 @@ body {
     margin: 0 auto; /* Centra el contenedor en la página */
 }
 
-.right-image {
+.imagenes/Coding imagen.png {
     max-width: 90%; /* La imagen ocupará hasta el 90% del ancho del contenedor */
     height: auto; /* Mantiene las proporciones originales de la imagen */
     border-radius: 10px; /* Bordes redondeados */
