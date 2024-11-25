@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     background: linear-gradient(135deg, #2b2b2b, #1e1e1e); /* Fondo con degradado */
     color: #fff;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
@@ -86,7 +86,7 @@ body {
 .left-content {
     max-width: 50%; /* Limita el ancho */
     text-align: left;
-    padding: 10px;
+    padding: 5px;
 }
 
 .left-content h1 {
@@ -125,7 +125,7 @@ body {
     padding: 15px 30px; /* Tamaño ajustado */
     border: none;
     border-radius: 5px;
-    font-size: 1rem; /* Fuente ajustada */
+    font-size: 1.2rem; /* Fuente ajustada */
     font-weight: bold;
     cursor: pointer;
     text-align: center;
@@ -148,7 +148,7 @@ body {
     display: flex;
     flex-direction: column; /* Apila texto e imagen verticalmente */
     align-items: center; /* Centra todo horizontalmente */
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px; /* Bordes redondeados */
     max-width: 40%; /* Limita el ancho del contenedor */
     margin: 20px auto; /* Centra el contenedor en la página */
