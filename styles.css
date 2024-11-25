@@ -120,8 +120,8 @@ body {
 }
 
 .cta-buttons button {
-    flex: 1 1 auto; /* Ocupan espacio proporcional al contenedor */
-    max-width: 220px; /* Ajusta el ancho máximo de los botones */
+    flex: 2 1 auto; /* Ocupan espacio proporcional al contenedor */
+    max-width: 320px; /* Ajusta el ancho máximo de los botones */
     padding: 15px 30px; /* Tamaño ajustado */
     border: none;
     border-radius: 5px;
