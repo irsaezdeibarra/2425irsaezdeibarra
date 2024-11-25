@@ -77,7 +77,7 @@ body {
     margin-bottom: 1.5rem; /* Espaciado inferior */
     line-height: 1.6; /* Más espacio entre líneas */
     font-weight: 300; /* Texto más fino */
-    color: #ffffff; /* Blanco puro */
+    color:#dcdcdc; /* gris claro */
     max-width: 90%; /* Permitir que ocupe más espacio horizontal */
     word-wrap: break-word; /* Ajuste adecuado */
 }
@@ -92,8 +92,8 @@ body {
     font-size: 1.2rem; /* Tamaño de fuente */
     margin-bottom: 2rem; /* Espaciado inferior */
     line-height: 1.8; /* Más espacio entre líneas */
-    color: #ffffff; /* Blanco puro */
-    font-weight: 300; /* Texto más fino */
+    color: #dcdcdc; /* gris claro */
+    font-weight: 280; /* Texto más fino */
     max-width: 90%; /* Ajuste horizontal */
 }
 
