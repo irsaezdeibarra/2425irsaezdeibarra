@@ -77,6 +77,12 @@ body {
     align-items: center;
     padding: 40px;
 }
+ {
+  .landing {  
+    background: linear-gradient(135deg, #333, #555, #777, #999); /* Tonos de gris */
+    min-height: 100vh; /* Asegura que cubra toda la pantalla */
+    margin: 0;
+}
 .left-content {
     width: 55%; /* El contenedor ocupa el 55% del ancho de la página */
     text-align: left;
@@ -125,17 +131,6 @@ body {
     color: #fff;
 }
 
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #202020;
-color: #ffffff;
-}
-.overlay-text {
-text-align: center;
-padding: 20px;
-background-color: #282c34;
 .right-content {
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
@@ -151,39 +146,11 @@ background-color: #282c34;
 }
 
 .overlay-text {
-font-size: 24px;
-color: #ffcd3c;
-margin-bottom: 15px;
     font-size: 24px;
     color: #ffcd3c;
     margin-bottom: 15px;
 }
 
-.right-content {
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #181a1f;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-max-width: 80%;
-margin: 0 auto;
-position: relative;
-}
-.imagenes/Coding imagen.png {
-max-width: 40%;
-height: auto;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
-.imagenes/Coding imagen.png {
-position: absolute;
-bottom: 0;
-right: 0;
-width: 40%; /* Resize to 40% of the container's width */
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 .right-image {
     max-width: 100%; /* La imagen ocupará el ancho máximo del contenedor */
     height: auto;
