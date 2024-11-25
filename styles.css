@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 10px;
     background: linear-gradient(135deg, #2b2b2b, #1e1e1e); /* Fondo con degradado */
     color: #fff;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
@@ -86,7 +86,7 @@ body {
 .left-content {
     max-width: 50%; /* Limita el ancho */
     text-align: left;
-    padding: 20px;
+    padding: 10px;
 }
 
 .left-content h1 {
