@@ -145,13 +145,23 @@ body {
     color: #ffcd3c; /* Color amarillo dorado */
     margin-bottom: 15px; /* Separación entre texto e imagen */
 }
+.overlay-text h2 {
+    font-size: 24px; /* Tamaño del texto */
+    color: #ffffff; /* Color blanco para el texto principal */
+    margin-bottom: 15px; /* Espacio entre el texto y la imagen */
+}
 
+/* Resaltar parte del texto */
+.overlay-text .highlight {
+    color: #00bfff; /* Color azul claro para la parte resaltada */
+    
+}
 /* Imagen */
 .right-image {
     max-width: 90%; /* Imagen ocupa el 90% del ancho del contenedor */
     height: auto; /* Mantiene las proporciones originales */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra para profundidad */
+    display: block; /* Hace que la imagen sea un bloque para alinearla debajo del texto */
 }
 
 
