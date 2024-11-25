@@ -75,24 +75,24 @@ body {
 .landing {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #2b2b2b, #1e1e1e); /* Fondo con degradado */
     color: #fff;
-    height: 100vh; /* Ajusta la altura completa de la ventana */
-    background: linear-gradient(145deg, #444 0%, #222 80%);
-
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    font-family: Arial, sans-serif;
 }
 
 .left-content {
-    max-width: 55%; /* Limita el ancho */
+    max-width: 50%; /* Limita el ancho */
     text-align: left;
     padding: 20px;
 }
 
 .left-content h1 {
-    font-size: 3rem; /* Aumenta el tamaño de la fuente */
+    font-size: 2rem; /* Tamaño del texto principal */
     margin-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1.4;
     font-weight: bold;
 }
 
@@ -101,9 +101,10 @@ body {
 }
 
 .left-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    color: #d0d0d0; /* Texto ligeramente gris */
 }
 
 .cta-buttons {
@@ -112,25 +113,24 @@ body {
 }
 
 .cta-buttons button {
-    padding: 15px 30px;
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .signup-button {
     background-color: #50fa7b;
     color: #000;
-    font-weight: bold;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .learn-button {
-    background-color: #000;
+    background-color: #444;
     color: #fff;
-    font-weight: bold;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
