@@ -27,15 +27,7 @@ body {
     gap: 15px; /* Espacio entre los elementos del menú */
     flex: 1; /* Permite que el menú ocupe espacio adicional para centrarlo */
 }
-.title {
-    color: #FFFF00; /* Amarillo en hexadecimal */
-}
-.menu .title {
-    font-weight: bold;
-    color: #FFD700; /* Amarillo dorado */
-    margin-right: 15px;
-}
-  
+
 .menu a {
     text-decoration: none;
     color: #fff; /* Color blanco */
@@ -66,9 +58,6 @@ body {
 
 .actions .create {
     background-color: #555; /* Color diferente para el botón "Create" */
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
 /* Landing Section */
@@ -80,33 +69,32 @@ body {
     background: linear-gradient(135deg, #2b2b2b, #1e1e1e); /* Fondo con degradado */
     color: #fff;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
-    font-family: Arial, sans-serif;
 }
 
 /* Ajustar el estilo del h1 */
 .left-content h1 {
-    font-size: 3rem; /* Tamaño más grande */
+    font-size: 3rem; /* Tamaño grande */
     margin-bottom: 1.5rem; /* Espaciado inferior */
-    line-height: 1.6; /* Espacio entre líneas */
+    line-height: 1.6; /* Más espacio entre líneas */
     font-weight: 300; /* Texto más fino */
     color: #ffffff; /* Blanco puro */
-    max-high: 90%; /* Permitir que ocupe más espacio horizontal */
-    word-wrap: break-word; /* Asegurar que se ajuste bien al espacio */
+    max-width: 90%; /* Permitir que ocupe más espacio horizontal */
+    word-wrap: break-word; /* Ajuste adecuado */
 }
 
 .left-content h1 .highlighted {
     font-weight: 700; /* Texto más grueso */
-    color: #ffffff; /* Mantener blanco puro */
+    color: #ffffff; /* Blanco puro */
 }
 
 /* Párrafo */
 .left-content p {
-    font-size: 1.2rem; /* Tamaño de fuente ligeramente mayor */
+    font-size: 1.2rem; /* Tamaño de fuente */
     margin-bottom: 2rem; /* Espaciado inferior */
     line-height: 1.8; /* Más espacio entre líneas */
-    color: #e0e0e0; /* Blanco suave */
-    max-high: 90%; /* Ancho máximo para alinearse al diseño */
-    word-wrap: break-word;
+    color: #ffffff; /* Blanco puro */
+    font-weight: 300; /* Texto más fino */
+    max-width: 90%; /* Ajuste horizontal */
 }
 
 /* Botones */
@@ -114,64 +102,38 @@ body {
     display: flex;
     gap: 20px; /* Espaciado entre botones */
     flex-wrap: wrap; /* Ajuste dinámico */
-    justify-content: flex-start; /* Alinear a la izquierda como en la referencia */
+    justify-content: flex-start; /* Alinear a la izquierda */
 }
 
 .cta-buttons button {
-    font-size: 1.6rem; /* Fuente más grande */
+    font-size: 1.6rem; /* Fuente grande */
     font-weight: bold;
-    padding: 15px 50px; /* Tamaño grande */
+    padding: 15px 50px; /* Tamaño amplio */
     border-radius: 8px; /* Bordes redondeados */
     cursor: pointer;
     border: none; /* Sin bordes */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-    flex-grow: 0; /* Ajuste de tamaño estático */
-    max-width: 300px; /* Limitar ancho máximo */
     text-align: center;
 }
 
 .signup-button {
     background-color: #28a745; /* Verde brillante */
-    color: #ffffff; /* Blanco */
+    color: #ffffff; /* Blanco puro */
 }
 
 .learn-button {
-    background-color: #000; /* negro */
-    color: #ffffff; /* Blanco */
-}
-/* Contenedor principal */
-.right-content {
-    display: flex;
-    flex-direction: column; /* Apila texto e imagen verticalmente */
-    align-items: center; /* Centra todo horizontalmente */
-    padding: 5px;
-    border-radius: 10px; /* Bordes redondeados */
-    max-width: 40%; /* Limita el ancho del contenedor */
-    margin: 20px auto; /* Centra el contenedor en la página */
-    text-align: center; /* Centra el texto */
+    background-color: #444; /* Gris oscuro */
+    color: #ffffff; /* Blanco puro */
 }
 
-
-.overlay-text h2 {
-    font-size: 24px; /* Tamaño del texto */
-    color: #ffffff; /* Color blanco para el texto principal */
-    margin-bottom: 15px; /* Espacio entre el texto y la imagen */
-}
-
-/* Resaltar parte del texto */
-.overlay-text .highlight {
-    color: #00bfff; /* Color azul claro para la parte resaltada */
-    
-}
 /* Imagen */
 .right-image {
-    max-width: 90%; /* Imagen ocupa el 90% del ancho del contenedor */
-    height: auto; /* Mantiene las proporciones originales */
+    max-width: 90%; /* Imagen ocupa el 90% del ancho */
+    height: auto; /* Mantiene proporciones */
     border-radius: 10px; /* Bordes redondeados */
-    display: block; /* Hace que la imagen sea un bloque para alinearla debajo del texto */
+    display: block;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra */
 }
-
 
 /* Footer */
 .footer {
@@ -201,6 +163,4 @@ body {
 .footer-item strong {
     color: #fff;
 }
-.footer-item strong {
-    color: #fff;
-}
+
