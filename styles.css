@@ -27,9 +27,6 @@ body {
     gap: 15px; /* Espacio entre los elementos del menú */
     flex: 1; /* Permite que el menú ocupe espacio adicional para centrarlo */
 }
-.explore-section .title {
-    color: #FFD700; /* Amarillo dorado */
-    font-weight: bold; /* Texto en negrita */
 .menu a {
     text-decoration: none;
     color: #fff; /* Color blanco */
