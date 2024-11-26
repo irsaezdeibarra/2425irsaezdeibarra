@@ -126,7 +126,17 @@ body {
     background-color: #000; /* Negro */
     color: #ffffff; /* Blanco puro */
 }
+.overlay-text {
+  font-family: Arial, sans-serif; /* Fuente similar a la de la imagen */
+  font-size: 24px; /* Tamaño del texto ajustado */
+  font-weight: bold; /* Para un texto más destacado */
+  color: #fff; /* Texto blanco */
+}
 
+.overlay-text span {
+  color: #47a3da; /* Color azul para la parte específica del texto */
+  text-shadow: 0px 0px 8px rgba(71, 163, 218, 0.8); /* Brillo para el texto azul */
+}
 /* Imagen */
 .right-image {
     max-width: 90%; /* Imagen ocupa el 90% del ancho */
