@@ -19,7 +19,9 @@ body {
 .logo img {
     height: 30px; /* Tamaño del logo */
 }
-
+.title {
+    color: yellow;
+}
 /* Menú centrado */
 .menu {
     display: flex;
