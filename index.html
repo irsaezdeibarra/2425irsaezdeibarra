@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Ariketak</title>
+    <meta charset="UTF-8">
+    <title>Feed RSS Simple</title>
 </head>
 <body>
-    <h1>Ariketak</h1>
-    
-    <a type="application/rss+xml" href="https://github.com/irsaezdeibarra/2425irsaezdeibarra/blob/main/feed.xml">
-        Observa las últimas noticias de mi página
-    </a>
-  
+    <h1>Últimas Noticias</h1>
+    <a href="feed.xml" type="application/rss+xml">Suscríbete al RSS</a>
+    <div id="rss-content"></div>
+
+    <script>
+    // Cargar feed RSS desde GitHub
+    fetch('https://raw.githubusercontent.com/irsaezdeibarra/2425irsaezdeibarra/main/feed.xml')
+    .then(response => response.text())
+    .then(xml => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(xml, "text/xml");
+        
+        let html = '';
+        doc.querySelectorAll('item').forEach(item => {
+            html += `
+                <div style="margin: 20px; padding: 10px; border-bottom: 1px solid #ccc;">
+                    <h3>${item.querySelector('title').textContent}</h3>
+                    <p>${item.querySelector('description').textContent}</p>
+                    <a href="${item.querySelector('link').textContent}" target="_blank">Ver artículo</a>
+                </div>
+            `;
+        });
+        
+        document.getElementById('rss-content').innerHTML = html;
+    })
+    .catch(error => {
+        document.getElementById('rss-content').innerHTML = 
+            '<p style="color: red">Error cargando el feed. Revisa la consola.</p>';
+        console.error('Error:', error);
+    });
+    </script>
 </body>
 </html>
