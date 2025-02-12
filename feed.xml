@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
     <title>Mi sitio web de GitHub</title>
     <link>https://irsaezdeibarra.github.io/2425irsaezdeibarra/</link>
     <description>Noticias y novedades relacionadas con mi sitio web</description>
-    <lastBuildDate>Mon, 12 Feb 2025 10:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2025 10:30:00 GMT</lastBuildDate>
 
-    <!-- Item 1 - Novedad de un artículo de un blog -->
+    <!-- Item 1 - Enlace externo -->
     <item>
       <title>Nuevo artículo sobre tecnologías web</title>
-      <link>https://www.tecnologiaweb.com/novedades-tecnologia</link> <!-- Enlace a un artículo de ejemplo -->
+      <link>https://www.tecnologiaweb.com/novedades-tecnologia</link>
       <description>Este artículo discute las últimas novedades sobre tecnologías web, incluyendo HTML, CSS y JavaScript.</description>
-      <pubDate>Mon, 12 Feb 2025 10:00:00 GMT</pubDate>
+      <pubDate>Wed, 12 Feb 2025 10:00:00 GMT</pubDate>
     </item>
 
-    <!-- Item 2 - Novedad sobre tendencias en diseño web -->
+    <!-- Item 2 - Enlace externo -->
     <item>
       <title>Tendencias de diseño web en 2025</title>
-      <link>https://www.inboundcycle.com/blog-de-inbound-marketing/tendencias-diseno-web</link> <!-- Otro enlace externo -->
+      <link>https://www.inboundcycle.com/blog-de-inbound-marketing/tendencias-diseno-web</link>
       <description>Un análisis sobre las tendencias emergentes en diseño web para el año 2025.</description>
-      <pubDate>Mon, 12 Feb 2025 10:30:00 GMT</pubDate>
+      <pubDate>Wed, 12 Feb 2025 10:30:00 GMT</pubDate>
     </item>
-
   </channel>
 </rss>
