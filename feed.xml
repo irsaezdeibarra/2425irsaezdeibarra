@@ -14,6 +14,7 @@
       <description>Introduccion a github.</description>
       <pubDate>Wed, 12 Feb 2025 10:15:00 GMT</pubDate>
       <category>Desarrollo</category>
+      <guid isPermaLink="false">identificador-único</guid>
     </item>
 
     <!-- Item 2 - Enlace externo -->
@@ -23,6 +24,7 @@
       <description>Este artículo discute las últimas novedades sobre tecnologías web, incluyendo HTML, CSS y JavaScript.</description>
       <pubDate>Wed, 12 Feb 2025 10:00:00 GMT</pubDate>
       <category>Tecnología</category>
+      <guid isPermaLink="false">identificador-único</guid>
     </item>
 
   
